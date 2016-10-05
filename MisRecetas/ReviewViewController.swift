@@ -33,10 +33,10 @@ class ReviewViewController: UIViewController {
         let translation = CGAffineTransform(translationX: 0.0, y: 500.0)
         
         //ratingStackView.transform = scale.concat(translation) // Combinar escalado con translación
-        
-        self.firstButton.transform = scale.concat(translation)
-        self.secondButton.transform = scale.concat(translation)
-        self.thirdButton.transform = scale.concat(translation)
+
+        self.firstButton.transform = scale.concatenating(translation)
+        self.secondButton.transform = scale.concatenating(translation)
+        self.thirdButton.transform = scale.concatenating(translation)
         
     }
     
